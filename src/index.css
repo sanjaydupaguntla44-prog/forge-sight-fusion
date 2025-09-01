@@ -2,39 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Scientific Detection System Design - Professional Tech Aesthetic */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 248 250 252;
+    --foreground: 215 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 255 255 255;
+    --card-foreground: 215 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 255 255 255;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Scientific blue primary */
+    --primary: 214 95% 45%;
+    --primary-foreground: 255 255 255;
+    --primary-glow: 214 95% 65%;
+    
+    /* Technical secondary */
+    --secondary: 220 15% 96%;
+    --secondary-foreground: 215 25% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 220 15% 96%;
+    --muted-foreground: 215 15% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 214 95% 95%;
+    --accent-foreground: 214 95% 35%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Analysis states */
+    --success: 142 76% 36%;
+    --success-foreground: 255 255 255;
+    --warning: 38 95% 56%;
+    --warning-foreground: 255 255 255;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 255 255 255;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 214 95% 45%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Scientific gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(214 95% 45%), hsl(214 95% 65%));
+    --gradient-analysis: linear-gradient(90deg, hsl(214 95% 45%), hsl(190 95% 45%));
+    --gradient-neural: linear-gradient(135deg, hsl(280 95% 35%), hsl(214 95% 45%));
+    
+    /* Tech shadows */
+    --shadow-glow: 0 0 30px hsl(214 95% 45% / 0.2);
+    --shadow-elevation: 0 10px 25px hsl(214 20% 20% / 0.1);
+    
+    /* Animation curves */
+    --ease-tech: cubic-bezier(0.23, 1, 0.32, 1);
+    --transition-smooth: all 0.3s var(--ease-tech);
 
     --radius: 0.5rem;
 
